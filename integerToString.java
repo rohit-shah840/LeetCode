@@ -19,6 +19,7 @@ public class integerToString {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the number to be converted into roman :");
         int num = sc.nextInt();
+        sc.close();
         System.out.println("The roman form of this number " + num + " is " + intToRoman(num));
     }
 }
