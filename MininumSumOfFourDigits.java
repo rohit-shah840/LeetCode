@@ -26,6 +26,7 @@ public class MininumSumOfFourDigits {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the four digits number :");
         int n = sc.nextInt();
+        sc.close();
         System.out.println("The minimun sum of four digits is : " + minimumSum(n));
     }
 }
