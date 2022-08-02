@@ -1,7 +1,5 @@
 import java.util.Scanner;
 
-import javax.crypto.spec.GCMParameterSpec;
-
 public class ConcatenationOfArray {
     static public int[] getConcatenation(int[] nums) {
         int l = nums.length;
