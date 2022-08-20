@@ -18,17 +18,17 @@ class Solution {
         List<List<Integer>> arr = new ArrayList<>();
         if(root==null) return arr;
         ArrayDeque<TreeNode> q = new ArrayDeque<>();
-        q.offer(root);
+        q.add(root);
         while(!q.isEmpty()){
             int size = q.size();
             List<Integer> currArr = new ArrayList<>();
            while(size-- > 0){
-               TreeNode temp = q.poll();
+               TreeNode temp = q.pop();
                currArr.add(temp.val);
                if(temp.left!=null)
-                   q.offer(temp.left);
+                   q.add(temp.left);
                if(temp.right!=null)
-                  q.offer(temp.right);
+                  q.add(temp.right);
            }
             arr.add(currArr); 
         }
