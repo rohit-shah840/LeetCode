@@ -1,6 +1,6 @@
 class Solution {
     public int subsetXORSum(int[] nums) {
-        int sum=0;
+int sum=0;
         //int n= (int)Math.pow(2,nums.length);
         for(int i=0;i<(1<<nums.length);++i){
             int x=0;
