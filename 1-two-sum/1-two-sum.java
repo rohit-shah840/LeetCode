@@ -8,6 +8,6 @@ class Solution {
             }
             n.put(nums[i],i);
         }
-        return new int[]{-1,-1};
+        return nums;
     }
 }
